@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-var PORT = 3000;
+// heroku gives us the port number automatically
+var PORT = process.env.PORT || 3000;
 
 var middleware = require('./middleware.js');
 
